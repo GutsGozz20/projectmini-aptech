@@ -4,7 +4,7 @@ import { SearchOutlined } from '@ant-design/icons';
 const Header = () => {
   return (
     <header>
-      <div className='container mx-auto'>
+      <div className='container '>
         <div className="header_wrapper flex justify-between">
             <div className=" text-3xl font-bold text-white py-10">MOVIE<span className='text-yellow-500'>VENNIE</span></div>
             <div className="flex items-center space-x-8 my-8 mr-[155px]">
