@@ -4,9 +4,9 @@ import { FiPlay } from "react-icons/fi";
 
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-import { Navigation, Pagination } from 'swiper/modules';
+// import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';    
 import 'swiper/css/navigation';
@@ -45,16 +45,16 @@ const NowPlayingMoviesList = ({ url }: { url: string }) => {
     });
   return (
     <>
-    <Swiper
-      // install Swiper modules
-        modules={[Navigation, Pagination]} // tạo < > và ...
-        navigation
-        pagination={{ clickable: true }}
-        spaceBetween={20} // khoảng cách giữa các slide
-        slidesPerView={4} // số lượng hình trên 1 view
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        >
+    {/* <Swiper */}
+      {/* // install Swiper modules
+        // modules={[Navigation, Pagination]} // tạo < > và ...
+        // navigation
+        // pagination={{ clickable: true }}
+        // spaceBetween={20} // khoảng cách giữa các slide
+        // slidesPerView={4} // số lượng hình trên 1 view
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // > */}
       {movies &&
           movies?.results.length > 0 &&
           movies?.results.map((movie) => {
@@ -77,7 +77,7 @@ const NowPlayingMoviesList = ({ url }: { url: string }) => {
                 </SwiperSlide>
             )
           })}
-          </Swiper>
+          {/* </Swiper> */}
     </>
   )
 }

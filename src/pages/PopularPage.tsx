@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet"
 import NowPlayingMoviesList from "../components/NowPlayingMoviesList"
-import MoviesList from "../components/MoviesList"
+// import MoviesList from "../components/MoviesList"
 
 
 const PopularPage = () => {
@@ -12,10 +12,12 @@ const PopularPage = () => {
                 <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
         <section className="popular container popular-route" id="popular">
-                
-                <div className="popular-content swiper flex gap-5 flex-wrap justify-between mb-16">
-                    <MoviesList url={`/popular`} />
+                <div className="heading">
+                    <h2 className="heading-title">Popular Movies</h2>
                 </div>
+                {/* <div className="popular-content swiper flex gap-5 flex-wrap justify-between mb-16">
+                    <MoviesList url={`/popular`} />
+                </div> */}
 
                 <div className="popular-content swiper flex gap-5 flex-wrap justify-between">
                     <NowPlayingMoviesList url={`/popular`} />
