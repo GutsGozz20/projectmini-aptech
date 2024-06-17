@@ -12,8 +12,13 @@ const PopularPage = () => {
                 <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
         <section className="popular container popular-route" id="popular">
-                <div className="popular-content swiper flex gap-5 flex-wrap justify-between">
+                <div className="popular-content swiper flex gap-5 flex-wrap justify-between mb-8">
                     <NowPlayingMoviesList url={`/popular`} />
+                </div>
+                <div className="movies-content">
+                    <div className="popular-content swiper">
+                        <NowPlayingMoviesList url={`/now_playing`} />
+                    </div>
                 </div>
                 
             </section>

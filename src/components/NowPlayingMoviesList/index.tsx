@@ -6,7 +6,7 @@ import { FiPlay } from "react-icons/fi";
 // Import Swiper React components
 import {Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper core and required modules
-// import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 // Import Swiper styles
 import 'swiper/css';    
 import 'swiper/css/navigation';
@@ -47,7 +47,7 @@ const NowPlayingMoviesList = ({ url }: { url: string }) => {
     <>
     <Swiper
       // install Swiper modules
-        // modules={[Navigation, Pagination]} // tạo < > và ...
+        modules={[Navigation, Pagination]} // tạo < > và ...
         // navigation
         pagination={{ clickable: true }}
         spaceBetween={20} // khoảng cách giữa các slide
