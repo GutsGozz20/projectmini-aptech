@@ -34,6 +34,8 @@ interface IResponse {
 
     const [movies, setMovies] = useState<IResponse | null>(null);
     const [isLoading, setIsLoading] = useState(false);
+    console.log("isLoading", isLoading);
+    
     useEffect(() => {
       setIsLoading(true);
     const fetchData = async () => {

@@ -4,11 +4,11 @@ import { SearchOutlined } from '@ant-design/icons';
 const Header = () => {
   return (
     <header>
-      <div className='container ml-[255px] '>
+      <div className='container mx-auto'>
         <div className="header_wrapper flex justify-between">
             <div className=" text-3xl font-bold text-white py-10">MOVIE<span className='text-yellow-500'>VENNIE</span></div>
             <div className="flex items-center space-x-8 my-8 mr-[155px]">
-              <Button className="bg-zinc-600 text-xl px-6 py-6 text-white rounded-full flex items-center space-x-32 border-none ">
+              <Button className="bg-zinc-600 text-xl px-6 py-6 text-white rounded-full flex items-center space-x-16 border-none ">
                 <span >Search Movie </span>
                 <SearchOutlined />
               </Button>
